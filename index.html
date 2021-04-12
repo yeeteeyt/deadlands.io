@@ -1,11 +1,15 @@
 <!DOCTYPE html> 
-<p> come draw</p>
-</script>
 
+function draw() {
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
 
 draw = function() {stroke(29, 143, 19);
     fill(mouseX, mouseY, 173);
     ellipse(mouseX, mouseY, 100, 100);
 };
 
-</script>
+
+  }
+}
